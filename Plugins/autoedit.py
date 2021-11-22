@@ -23,15 +23,15 @@ async def editing(bot, message):
       except:
          caption_text = ""
          pass 
-"""      if (message.document or message.video or message.audio): 
+      if (message.document or message.video or message.audio): 
           if message.caption:                        
              file_caption = f"**{message.caption}**"                
-          else:
+"""          else:
              fname = media.file_name
              filename = fname.replace("_", ".")
-             file_caption = f"**{filename}**"  """
+             file_caption = f"**{filename}**" """
               
-      try:
+     try:
           if caption_position == "top":
              await bot.edit_message_caption(
                  chat_id = message.chat.id, 
